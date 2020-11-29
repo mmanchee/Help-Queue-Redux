@@ -107,7 +107,7 @@ class TicketControl extends React.Component {
   }
 
 }
-TicketControl = connect(mapStateToProps)(TicketControl);
+
 
 TicketControl.propTypes = {
   masterTicketList: PropTypes.object
@@ -119,5 +119,7 @@ const mapStateToProps = state => {
     masterTicketList: state
   }
 }
+
+TicketControl = connect(mapStateToProps)(TicketControl);
 
 export default TicketControl;
